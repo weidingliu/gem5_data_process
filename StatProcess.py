@@ -20,7 +20,7 @@ def readOneFile(path):
 
 def save_df(name,df):
     path = './generates/' + name + '.csv'
-    df.to_csv(path)
+    df.to_csv(path,index=None)
 
 def GetAll():
     filelist = pd.read_csv('./generates/filelist')
